@@ -1,8 +1,10 @@
 spring:
+  application:
+    name: first_microservice
   datasource:
-    url: jdbc:postgresql://localhost:5432/demo
-    username: postgres
-    password: password
+    url: jdbc:postgresql://localhost:5432/first_microservice
+    username: {POSTGRES_USERNAME}
+    password: {POSTGRES_PASSWORD}
     driver-class: org.postgresql.Driver
   jpa:
     hibernate:
@@ -13,4 +15,7 @@ spring:
       hibernate:
         format_sql: true
     database: postgresql
-
+some:
+  data:
+    for:
+      check: you_are_in_first_microservice
