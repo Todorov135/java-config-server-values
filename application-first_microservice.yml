@@ -15,7 +15,4 @@ spring:
       hibernate:
         format_sql: true
     database: postgresql
-some:
-  data:
-    for:
-      check: you_are_in_first_microservice
+message: you_are_in_first_microservice
